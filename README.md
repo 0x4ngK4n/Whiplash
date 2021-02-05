@@ -5,7 +5,7 @@ A whip application on a mobile device was used at various times in the episode a
 The characters would "whip" as a way to mock the other characters who were being controlled by their significant others.
 I found it quite hilarous and decided to make an iOS app out of it.
 
-So... WHIPASHHHHHHH....!
+Just shake you iPhone and ... WHIPASHHHHHHH....!
 
 
 
