@@ -13,7 +13,24 @@
 		B356037B25CCE03300060971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B356037925CCE03300060971 /* Main.storyboard */; };
 		B356037D25CCE03400060971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B356037C25CCE03400060971 /* Assets.xcassets */; };
 		B356038025CCE03400060971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B356037E25CCE03400060971 /* LaunchScreen.storyboard */; };
+		B356038B25CCE04A00060971 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B356038925CCE04800060971 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B356038C25CCE04A00060971 /* AVFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B356038925CCE04800060971 /* AVFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B356039025CCE24400060971 /* crack_the_whip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B356038F25CCE24400060971 /* crack_the_whip.mp3 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B356038D25CCE04A00060971 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B356038C25CCE04A00060971 /* AVFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B356037025CCE03300060971 /* Whiplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whiplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,8 @@
 		B356037C25CCE03400060971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B356037F25CCE03400060971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B356038125CCE03400060971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B356038925CCE04800060971 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B356038F25CCE24400060971 /* crack_the_whip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crack_the_whip.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B356038B25CCE04A00060971 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +62,7 @@
 			children = (
 				B356037225CCE03300060971 /* Whiplash */,
 				B356037125CCE03300060971 /* Products */,
+				B356038825CCE04800060971 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +77,7 @@
 		B356037225CCE03300060971 /* Whiplash */ = {
 			isa = PBXGroup;
 			children = (
+				B356038E25CCE05900060971 /* Sounds */,
 				B356037325CCE03300060971 /* AppDelegate.swift */,
 				B356037525CCE03300060971 /* SceneDelegate.swift */,
 				B356037725CCE03300060971 /* ViewController.swift */,
@@ -65,6 +87,22 @@
 				B356038125CCE03400060971 /* Info.plist */,
 			);
 			path = Whiplash;
+			sourceTree = "<group>";
+		};
+		B356038825CCE04800060971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B356038925CCE04800060971 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B356038E25CCE05900060971 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B356038F25CCE24400060971 /* crack_the_whip.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +115,7 @@
 				B356036C25CCE03300060971 /* Sources */,
 				B356036D25CCE03300060971 /* Frameworks */,
 				B356036E25CCE03300060971 /* Resources */,
+				B356038D25CCE04A00060971 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +166,7 @@
 				B356038025CCE03400060971 /* LaunchScreen.storyboard in Resources */,
 				B356037D25CCE03400060971 /* Assets.xcassets in Resources */,
 				B356037B25CCE03300060971 /* Main.storyboard in Resources */,
+				B356039025CCE24400060971 /* crack_the_whip.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
